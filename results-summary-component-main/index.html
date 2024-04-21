@@ -6,6 +6,8 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
+
+  <script src="app.js" defer></script>
   
   <title>Frontend Mentor | Results summary component</title>
 </head>
@@ -24,8 +26,7 @@
       <p>You scored higher than 65% of the people who have taken these tests.</p>      
     </div>
 
-    <div class="summary-section">
-      <div id="flex-container">
+      <div id="flex-container" class="summary-section">
         <p>Summary</p>
 
         <div class="summary-item reaction-category">
@@ -60,7 +61,8 @@
           <p class="summary-text"><span class="visual-score">72</span> / 100</p>
         </div>
         
-        <button type="button" class="button">Continue</button>
+        <button type="button" class="button" onclick="hello()">Continue</button>
+
       </div>
     </div>
 

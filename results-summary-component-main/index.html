@@ -7,61 +7,65 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
 
+  <script src="https://d3js.org/d3.v7.js" defer></script>
   <script src="app.js" defer></script>
+  
   
   <title>Frontend Mentor | Results summary component</title>
 </head>
 <body>
   <div id="grid-container">
-    <!-- empty div for the sole purpose of creating the bar at the top of the screen-->
-    <!-- <div class="empty"></div> -->
     
     <div class="result-section">
       <p>Your Result</p>
       <div class="circle-result">
-        <p>76</p>
+        <p id="overall-result"></p>
         <p>of 100</p>
       </div>
       <p>Great</p>
-      <p>You scored higher than 65% of the people who have taken these tests.</p>      
+      <p>You scored higher than <span id="percentile"></span> of the people who have taken these tests.</p>      
     </div>
 
       <div id="flex-container" class="summary-section">
         <p>Summary</p>
 
         <div class="summary-item reaction-category">
+          
           <div class="category-grouping">
-            <img src="./assets/images/icon-reaction.svg">
-            <p>Reaction</p> 
+            <img class="category-image">
+            <p class="category-name"></p> 
           </div>       
-          <p class="summary-text"> <span class="reaction-score">80</span> / 100</p>
+          <p class="category-score"><span class="score"></span> / 100</p>
         </div>
 
         <div class="summary-item memory-category">
+          
           <div class="category-grouping">
-            <img src="./assets/images/icon-memory.svg">
-            <p>Memory</p> 
+            <img src="" class="category-image">
+            <p class="category-name"></p>  
           </div>                 
-          <p class="summary-text"><span class="memory-score">92</span> / 100</p>
+          <p class="category-score"><span class="score"></span> / 100</p>
         </div>
 
         <div class="summary-item verbal-category">
+          
           <div class="category-grouping">
-            <img src="./assets/images/icon-verbal.svg">
-            <p>Verbal</p> 
+            <img src="" class="category-image">
+            <p class="category-name"></p> 
           </div>            
-          <p class="summary-text"><span class="verbal-score">61</span> / 100</p>
+          <p class="category-score"><span class="score">61</span> / 100</p>
         </div>
 
         <div class="summary-item visual-category">
+          
           <div class="category-grouping">
-            <img src="./assets/images/icon-visual.svg">
-            <p>Visual</p> 
+            <img src="" class="category-image">
+            <p class="category-name"></p> 
           </div>                
-          <p class="summary-text"><span class="visual-score">72</span> / 100</p>
+          <p class="category-score"><span class="score">72</span> / 100</p>
         </div>
         
-        <button type="button" class="button" onclick="hello()">Continue</button>
+        <button type="button" class="button" onclick="fetchData()">Continue</button>
 
       </div>
     </div>

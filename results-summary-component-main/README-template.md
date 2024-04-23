@@ -24,7 +24,8 @@ Users should be able to:
 
 - View the optimal layout for the interface depending on their device's screen size
 - See hover and focus states for all interactive elements on the page
-- **Bonus**: Use the local JSON data to dynamically populate the content
+- Use the local JSON data to dynamically populate the content
+- When user clicks continue, the data output is randomised to produce a different set of values
 
 ### Screenshot
 
@@ -47,6 +48,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Mobile:
     - used a 4x1 grid to layout this page on mobile devices
     - within the main grid sections with the result and summary, display flex is used to layout the items in each section
+    - Javascript is used to dynamically populate the results output
+    - Uses D3.js to draw the graphs
 
 - Media queries used to dynamically adjust the grid layout based on the screen size of the device
 
@@ -58,8 +61,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - CSS Grid
 - Mobile-first workflow
 - [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
+- [D3.js](https://d3js.org/) - D3 library
+
+### What I learned
+
+- DOM manipulation
+- using async/await to fetch data from a local JSON file
 
 ### Continued development
 
@@ -67,6 +74,10 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Footers
 
+- JSON
+
+- APIs
+
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
+- Frontend Mentor - [@shaunso](https://www.frontendmentor.io/profile/shaunso)

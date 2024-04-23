@@ -55,17 +55,17 @@
   
   .circle-result {
     background-image: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
-    width: 7.5rem;
-    height: 7.5rem;
+    width: 9rem;
+    height: 9rem;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px 0;
+    padding-top: 8px;
   }
   
   .circle-result > p:first-child {
-    font-size: 3rem;
+    font-size: 4.5rem;
     font-weight: 800;
     color: hsla(221, 100%, 96%, 85%);
   }
@@ -128,12 +128,12 @@
     background-color: hsla(234, 85%, 45%, 12.5%);
   }
   
-  .summary-text {
+  .category-score {
     color: hsla(224, 30%, 27%, 50%);
     font-weight: 600;
   }
   
-  .summary-text > span {
+  .category-score > span {
     font-weight: 700;
     color: hsl(224, 30%, 27%);
   }
@@ -266,6 +266,14 @@
     align-items: center;
     padding: 0.5rem 0.5rem;
     margin: 0.4rem 1rem 0 1rem;
+  }  
+  
+  .bar-chart{
+    z-index: -50;
+  }
+
+  .bar-chart{
+    z-index: -50;
   }
   
   .category-grouping {
@@ -300,12 +308,12 @@
     background-color: hsla(234, 85%, 45%, 12.5%);
   }
   
-  .summary-text {
+  .category-score {
     color: hsla(224, 30%, 27%, 50%);
     font-weight: 600;
   }
   
-  .summary-text > span {
+  .category-score > span {
     font-weight: 700;
     color: hsl(224, 30%, 27%);
   }
@@ -444,6 +452,10 @@
     margin: 0.8rem 2rem 0 2rem;
   }
   
+  .bar-chart{
+    z-index: -50;
+  }
+
   .category-grouping {
     display: flex;
     flex-direction: row;
@@ -476,13 +488,13 @@
     background-color: hsla(234, 85%, 45%, 12.5%);
   }
   
-  .summary-text {
+  .category-score {
     color: hsla(224, 30%, 27%, 50%);
     font-weight: 600;
     font-size: 0.9rem;
   }
   
-  .summary-text > span {
+  .category-score > span {
     font-weight: 700;
     color: hsl(224, 30%, 27%);
   }
